@@ -1,6 +1,10 @@
 .navbar {
   margin-bottom: 0; }
 
+.navbar-brand .material-icons {
+  vertical-align: bottom;
+  line-height: 21px; }
+
 .map {
   height: 100vh; }
 
