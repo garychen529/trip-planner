@@ -17,6 +17,8 @@ app.use(bodyParser.json());
 app.use(volleyball);
 
 app.use(express.static(__dirname + '/public'));
+app.use('/bootstrap', express.static(__dirname + '/bower_components/bootstrap/dist'))
+app.use('/jquery', express.static(__dirname + '/bower_components/jquery/dist'))
 
 app.use(function(err, req, res, next) {
 	console.log("Oh noes!!!!!");

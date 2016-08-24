@@ -1,0 +1,49 @@
+<div class="controls">
+  <div class="top">
+    <div class="form-group">
+      <label for="hotels">Hotels</label>
+      <select class="form-control" name="hotels" id="hotels">
+        {% for hotel in hotels %}
+        <option value="{{hotel.name}}">{{hotel.name}}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="hotels">Restaurants</label>
+      <select class="form-control" name="restaurants" id="restaurants">
+        {% for restaurant in restaurants %}
+        <option value="{{restaurant.name}}">{{restaurant.name}}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="activities">Activities</label>
+      <select class="form-control" name="activities" id="activities">
+        {% for activity in activities %}
+        <option value="{{activity.name}}">{{activity.name}}</option>
+        {% endfor %}
+      </select>
+    </div>
+  </div>
+  <div class="bottom">
+    <h2>Day 2</h2>
+    <ul class="list-inline">
+      <li><a href="#" class="btn btn-primary">1</a></li>
+      <li><a href="#" class="btn btn-primary">2</a></li>
+      <li><a href="#" class="btn btn-primary">3</a></li>
+      <li><a href="#" class="btn btn-primary">+</a></li>
+    </ul>
+    <h3>Hotels</h3>
+    <ul>
+      <li>Hotel #1</li>
+    </ul>
+    <h3>Restaurants</h3>
+    <ul>
+      <li>Restaurant #1</li>
+    </ul>
+    <h3>Activities</h3>
+    <ul>
+      <li>Activity #1</li>
+    </ul>
+  </div>
+</div>

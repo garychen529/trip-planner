@@ -1,11 +1,14 @@
-{% for hotel in hotels %}
-	{{hotel.name}}
-{% endfor %}
+{% extends 'layout.html' %}
 
-{% for restaurant in restaurants %}
-	{{restaurant.name}}
-{% endfor %}
-
-{% for activity in activities %}
-	{{activity.name}}
-{% endfor %}
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      {% include "./map.html" %}
+    </div>
+    <div class="col-sm-4">
+      {% include "./controls.html" %}
+    </div>
+  </div>
+</div>
+{% endblock %}
