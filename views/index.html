@@ -1,14 +1,12 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-<div class="container">
-  <div class="row">
-    <div class="col-sm-8">
-      {% include "./map.html" %}
-    </div>
-    <div class="col-sm-4">
-      {% include "./controls.html" %}
-    </div>
+<div class="row">
+  <div class="col-sm-8">
+    {% include "./map.html" %}
+  </div>
+  <div class="col-sm-4">
+    {% include "./controls.html" %}
   </div>
 </div>
 {% endblock %}
